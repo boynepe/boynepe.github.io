@@ -1,0 +1,59 @@
+:root {
+  color-scheme: light dark;
+  --bg: #FBF7F2;
+  --fg: #1A1512;
+  --accent: #B8431C;
+  --rule: rgba(26, 21, 18, 0.12);
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #14100E; --fg: #F6F1EC; --accent: #FF7A4D; --rule: rgba(246, 241, 236, 0.16); }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 6rem;
+  background: var(--bg);
+  color: var(--fg);
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 { font-size: 2rem; letter-spacing: -0.022em; line-height: 1.2; margin: 0 0 0.25rem; }
+h2 { font-size: 1.2rem; letter-spacing: -0.01em; margin: 2.75rem 0 0.6rem; }
+h3 { font-size: 1rem; margin: 2rem 0 0.4rem; }
+p { margin: 0 0 1rem; }
+ul { padding-left: 1.15rem; }
+li { margin-bottom: 0.4rem; }
+
+a { color: var(--accent); text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+.muted { opacity: 0.66; font-size: 0.875rem; }
+
+nav {
+  margin: 0 0 2.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.9375rem;
+}
+nav a { margin-right: 1.1rem; }
+nav a[aria-current="page"] { color: var(--fg); font-weight: 600; text-decoration: none; }
+
+.lede { font-size: 1.0625rem; }
+
+.callout {
+  border-left: 3px solid var(--accent);
+  padding: 0.1rem 0 0.1rem 1rem;
+  margin: 1.5rem 0;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.875rem;
+  opacity: 0.66;
+}
