@@ -44,6 +44,9 @@ nav a[aria-current="page"] { color: var(--fg); font-weight: 600; text-decoration
 
 .lede { font-size: 1.0625rem; }
 
+.store { margin: 1.75rem 0 0; }
+.store img { display: block; height: 50px; width: auto; margin-bottom: 0.6rem; }
+
 .callout {
   border-left: 3px solid var(--accent);
   padding: 0.1rem 0 0.1rem 1rem;
