@@ -3,6 +3,16 @@
 Public website, published with GitHub Pages at <https://boynepe.github.io/>.
 Each app gets its own subdirectory; the root page is an index of them.
 
+## `/mneme/`
+
+Support, privacy and terms pages for Mneme, a lyric memorization app for
+iPhone. Source in the private `Mneme` repo; `Docs/site.md` there lists what
+points at each URL. The same rule as Nofret's: `/mneme/privacy` and
+`/mneme/terms` are compiled into `PaywallView.swift`, and the listing names
+`/mneme/`, `/mneme/privacy` and `/mneme/support`, so **they must not change**.
+The privacy page claims Mneme collects nothing; it, the App Store privacy
+answers and `Mneme/PrivacyInfo.xcprivacy` change together or not at all.
+
 ## `/nofret/`
 
 Support, privacy and terms pages for [Nofret](https://boynepe.github.io/nofret/),
